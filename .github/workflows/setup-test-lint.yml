@@ -6,11 +6,6 @@ jobs:
     steps:
        - name: Checkout repository
          uses: actions/checkout@v3
-       - name: Setup app
-         run: make setup
-       - name: Start npm
-         run: make start
-       - name: Run tests
-         run: make test
-       - name: Run Linter
-         run: make lint
+       - run: make setup
+       - run: make test
+       - run: make lint
